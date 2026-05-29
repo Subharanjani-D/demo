@@ -3,178 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Smart Accident Detection</title>
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
       font-family: Arial, sans-serif;
     }
 
-    body {
-      background: linear-gradient(to right, #141e30, #243b55);
-      color: white;
-      min-height: 100vh;
+    body{
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color:white;
     }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 60px;
     }
 
-    nav h1 {
-      font-size: 28px;
+    nav h1{
+      font-size:30px;
+      color:#00e5ff;
     }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 25px;
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:25px;
     }
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:18px;
     }
 
-    .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      height: 80vh;
-      padding: 20px;
+    .hero{
+      height:90vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
     }
 
-    .hero h2 {
-      font-size: 55px;
-      margin-bottom: 20px;
+    .hero h2{
+      font-size:55px;
+      margin-bottom:20px;
     }
 
-    .hero p {
-      font-size: 22px;
-      max-width: 700px;
-      line-height: 1.6;
-      margin-bottom: 30px;
+    .hero p{
+      font-size:22px;
+      max-width:800px;
+      line-height:1.6;
+      margin-bottom:30px;
     }
 
-    .btn {
-      padding: 14px 32px;
-      border: none;
-      border-radius: 30px;
-      background: #00c6ff;
-      color: black;
-      font-size: 18px;
-      cursor: pointer;
-      transition: 0.3s;
-      text-decoration: none;
-      font-weight: bold;
+    .btn{
+      padding:15px 35px;
+      background:#00e5ff;
+      border:none;
+      border-radius:30px;
+      color:black;
+      font-size:18px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
     }
 
-    .btn:hover {
-      background: white;
-      transform: scale(1.05);
+    .btn:hover{
+      background:white;
+      transform:scale(1.05);
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      padding: 40px 60px;
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      padding:50px;
     }
 
-    .card {
-      background: rgba(255,255,255,0.1);
-      padding: 30px;
-      border-radius: 20px;
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
+    .card{
+      background:rgba(255,255,255,0.1);
+      padding:30px;
+      border-radius:20px;
+      transition:0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
+    .card:hover{
+      transform:translateY(-10px);
     }
 
-    .card h3 {
-      margin-bottom: 15px;
-      font-size: 24px;
+    .card h3{
+      margin-bottom:15px;
+      color:#00e5ff;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-      color: #ddd;
+    footer{
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+      color:#ddd;
     }
+
   </style>
 </head>
+
 <body>
 
   <nav>
-    <h1>Subha</h1>
+    <h1>SafeRide</h1>
+
     <ul>
       <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
   <section class="hero">
-    <h2>Welcome to My Website</h2>
+    <h2>Smart Accident Detection System</h2>
+
     <p>
-      I am a CSE student passionate about web development, UI/UX design,
-      and creating modern websites.
+      A smart emergency response platform that detects accidents,
+      shares live location, and sends instant alerts to emergency contacts
+      for faster medical assistance and improved road safety.
     </p>
-    <a href="#" class="btn">Explore More</a>
+
+    <button class="btn">Explore Project</button>
   </section>
 
-  <section class="cards">
+  <section class="features">
+
     <div class="card">
-      <h3>Web Development</h3>
-      <p>Creating responsive and attractive websites using HTML, CSS, and JavaScript.</p>
+      <h3>Accident Detection</h3>
+      <p>
+        Detects sudden impacts and abnormal vehicle movements automatically.
+      </p>
     </div>
 
     <div class="card">
-      <h3>UI/UX Design</h3>
-      <p>Designing modern interfaces with smooth user experiences.</p>
+      <h3>Emergency Alerts</h3>
+      <p>
+        Sends instant emergency notifications to family members and contacts.
+      </p>
     </div>
 
     <div class="card">
-      <h3>Projects</h3>
-      <p>Building innovative projects and learning new technologies every day.</p>
+      <h3>Live GPS Tracking</h3>
+      <p>
+        Shares the exact accident location using GPS for quick response.
+      </p>
     </div>
+
   </section>
 
   <footer>
-    © 2026 Subha Ranjani | All Rights Reserved
+    © 2026 Smart Accident Detection System | Developed by Subha Ranjani
   </footer>
 
-</body>
-</html>
-```
-
-## How to Update in GitHub
-
-1. Open your GitHub repository.
-2. Open `index.html`.
-3. Click the pencil/edit icon.
-4. Remove old code.
-5. Paste this new code.
-6. Click `Commit changes`.
-
-Vercel will automatically redeploy your website in a few seconds.
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Website</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
 </body>
 </html>
